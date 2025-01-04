@@ -1,1 +1,55 @@
-
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicativo de Serviços Públicos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Portal de Serviços Públicos</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#agendar">Agendar Serviço</a></li>
+            <li><a href="#notificacoes">Notificações</a></li>
+            <li><a href="#mapa">Mapa de Serviços</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="agendar">
+            <h2>Agende Seu Serviço</h2>
+            <form id="agendamento-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" required>
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" required>
+                <label for="tipo">Tipo de Serviço:</label>
+                <select id="tipo" required>
+                    <option value="coleta">Coleta de Lixo</option>
+                    <option value="poda">Poda de Árvores</option>
+                </select>
+                <label for="data">Data Preferida:</label>
+                <input type="date" id="data" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="notificacoes">
+            <h2>Notificações e Avisos</h2>
+            <ul id="lista-notificacoes">
+                <li>Coleta de lixo será adiada devido ao feriado.</li>
+                <li>Poda de árvores programada para o dia 15 de janeiro.</li>
+            </ul>
+        </section>
+        <section id="mapa">
+            <h2>Mapa de Serviços Públicos</h2>
+            <div id="map"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Contato: prefeitura@email.com</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
