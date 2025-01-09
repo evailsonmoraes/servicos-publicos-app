@@ -1,9 +1,9 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aplicativo de Serviços Públicos</title>
+    <title>Notificações</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         button {
@@ -16,16 +16,18 @@
 </head>
 <body>
     <header>
-        <h1>Bem-vindo ao Portal de Serviços Públicos</h1>
+        <h1>Notificações e Avisos</h1>
     </header>
     <nav>
+        <button onclick="location.href='index.html'">Início</button>
         <button onclick="location.href='agendar.html'">Agendar Serviço</button>
-        <button onclick="location.href='notificacoes.html'">Notificações</button>
         <button onclick="location.href='mapa.html'">Mapa de Serviços</button>
     </nav>
     <main>
-        <h2>Introdução</h2>
-        <p>Utilize o portal para agendar serviços públicos, conferir notificações e visualizar o mapa de serviços disponíveis.</p>
+        <ul id="lista-notificacoes">
+            <li>Coleta de lixo será adiada devido ao feriado.</li>
+            <li>Poda de árvores programada para o dia 15 de janeiro.</li>
+        </ul>
     </main>
     <footer>
         <p>Contato: prefeitura@email.com</p>
